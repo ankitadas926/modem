@@ -7,7 +7,7 @@
 <body>
     <ul class="nav-bar">
         <li>
-            <a href="#" class="menu-title">Home</a>
+            <a href="index.html" class="menu-title">Home</a>
             <ul class="sub-menu">
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Utility</a></li>
@@ -25,7 +25,7 @@
             <ul class="sub-menu">
                 <li><a href="#">Mod</a></li>
                 <li><a href="#">Demod</a></li>
-                <li><a href="#">Digital IF</li>
+                <li><a href="#">Digital IF</a></li>
                 <li><a href="#">Traffic port</a></li>
                 <li><a href="#">Alarm Mask</a></li>
                 <li><a href="#">Test</a></li>
@@ -36,7 +36,7 @@
             <ul class="sub-menu">
                 <li><a href="monitor_mod.html">Mod</a></li>
                 <li><a href="monitor_demod.html">Demod</a></li>
-                <li><a href="monitor_digitalIF.html">Digital IF</li>
+                <li><a href="monitor_digitalIF.html">Digital IF</a></li>
                 <li><a href="monitor_traffic.html">Traffic port</a></li>
                 <li><a href="monitor_alarm.html">Alarm</a></li>
                 <li><a href="monitor_log.html">Log</a></li>
@@ -45,31 +45,38 @@
     </ul>
     <h2>Traffic</h2>
     <div class="content">
-            <p>	Ethernet Tx Total Packet Count :  : <span>4567</span></p>
+        <div class="content-section">
+            <p>	Ethernet Tx Total Packet Count :  <span>4567</span></p>
             <p> Ethernet Tx Unicast Packet Count    : <span>4568</span></p>
             <p> Ethernet Tx Multicast Packet Count  : <span>783945</span></p>
             <p> Ethernet Tx Broadcast Packet Count   : <span>N/A</span></p>
-            <button class="clear">Ethernet Tx Packet Count Clr </button>
+            <button class="clear">Ethernet Tx Packet Count Clear </button>
+        </div>
+        <div class="content-section">
             <p> Ethernet Rx Total Packet Count  : <span>N/A</span></p>
             <p> Ethernet Rx Unicast Packet Count  : <span>N/A</span></p>
             <p> Ethernet Rx Multicast Packet Count  : <span>N/A</span></p>            
             <p> Ethernet Rx Broadcast Packet Count : <span>N/A</span></p>
             <p> Ethernet Rx Error Packet Count : <span>N/A</span></p>
-            <button class="clear">	Ethernet Rx Packet Count Clr </button>
-           
+            <button class="clear">	Ethernet Rx Packet Count Clear </button>
+        </div>
     </div>
     <div class="content">
+        <div class="content-section">
             <p>	IP Tx Total Packet Count  : <span>N/A</span></p>
             <p>	IP Tx Unicast Packet Count  : <span>N/A</span></p>
             <p>	IP Tx Multicast Packet Count : <span>N/A</span></p>
             <p>	IP Tx Broadcast Packet Count : <span>N/A</span></p>
             <button class="clear">IP Tx Broadcast Packet Count </button>
+        </div>
+        <div class="content-section">
             <p>	IP Rx Total Packet Count  : <span>N/A</span></p>
             <p>	IP Rx Unicast Packet Count  : <span>N/A</span></p>
             <p>	IP Rx Multicast Packet Count : <span>N/A</span></p>
             <p>	IP Rx Broadcast Packet Count : <span>N/A</span></p>
             <p> Rx Error Packet Count : <span>N/A</span></p>
             <button class="clear">IP Rx Broadcast Packet Count </button>
+        </div>
     </div>
 </body>
 </html>

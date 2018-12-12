@@ -20,6 +20,8 @@ ul.nav-bar {
 ul.nav-bar a {
     text-decoration: none;
     color: #fff;
+    width: 100%;
+    display: inline-block;
 }
 
 ul.nav-bar>li{
@@ -40,16 +42,19 @@ ul.sub-menu {
     top: 41px;
     width: 100%;
     left: 0;
-    text-align: center;
+    text-align: left;
 }
 
 ul.sub-menu>li {
-    padding: 5px;
+    padding: 5px 30px;
     border-bottom: solid 1px #fff;
 }
 
 ul.nav-bar>li:hover .sub-menu {
-    display:block;
+    display:block;    
+}
+ul.nav-bar>li:hover {
+    background-color: #75b7d6;
 }
 
 .content {
@@ -57,23 +62,34 @@ ul.nav-bar>li:hover .sub-menu {
     margin: 0;
     padding:30px;
     margin-bottom: 2px;
+    display: flex;
     
 }
-
-button.clear {
-    left: 45%;
-    position: absolute;
+.content-section{
+    width:50%;
 }
-td, th {
-    border: 1px solid #dddddd;
+.content-table{
+    background-color: #fff;
+    margin: 0;
+    padding:30px;
+    margin-bottom: 2px;   
+}
+.content-table>table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.content-table td {
+    border: 1px solid #949393;
     text-align: left;
     padding: 8px;
   }
   
-  tr:nth-child(even) {
+.content-table tr:nth-child(even) {
     background-color: #dddddd;
   }
-  tr:first-child{
+.content-table tr:first-child{
       font-weight: 600;
 
   }
+
